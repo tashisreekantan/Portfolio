@@ -1,0 +1,422 @@
+.video_wrap {
+  overflow: hidden;
+
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+
+    @keyframes dial {
+      0% {
+        transform: rotate(28deg);
+      }
+
+      10% {
+        transform: rotate(32deg);
+      }
+
+      20% {
+        transform: rotate(45deg);
+      }
+
+      45% {
+        transform: rotate(58deg);
+      }
+
+      48% {
+        transform: rotate(56deg);
+      }
+
+      52% {
+        transform: rotate(58deg);
+      }
+
+      54% {
+        transform: rotate(56deg);
+      }
+
+      56% {
+        transform: rotate(58deg);
+      }
+    }
+
+    @keyframes track {
+      0% {
+        stroke-dasharray: 48%;
+      }
+
+      10% {
+        stroke-dasharray: 50%;
+      }
+
+      20% {
+        stroke-dasharray: 55%;
+      }
+
+      30% {
+        stroke-dasharray: 58%;
+      }
+
+      40% {
+        stroke-dasharray: 60%;
+      }
+
+      50% {
+        stroke-dasharray: 61%;
+      }
+    }
+
+    @keyframes plyr-popup {
+      0% {
+        opacity: .5;
+        transform: translateY(10px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    .loader-icon .dial {
+      transform: rotate(28deg);
+      transform-origin: center;
+      animation: dial 2.5s cubic-bezier(0.25, 1, 0.5, 1);
+      animation-iteration-count: infinite;
+    }
+
+    .loader-icon .track {
+      stroke-dasharray: 47%;
+      animation: track 2.5s linear;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  #top_video {
+    animation: plyr-popup .2s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+  }
+
+  #top_video::cue {
+
+    font-size: 30px;
+  }
+
+  .plyr_controls {
+    display: none;
+    align-items: center;
+    width: 100%;
+    z-index: 7;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    // background-color: $B;
+    padding: 0.5em;
+    min-height: 40px;
+    // Tooltips start
+    button{
+      position: relative;
+    }
+    .tooltip{
+      // width: 45px;
+      background-color:  $W ;
+      color: $grey;
+      text-align: center;
+      font-family: $CGR;
+      border-radius: 3px;
+      padding:  3px 4px 5px;
+      line-height: 1;
+      left: 50%;
+      transform: translateX(-50%);
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      bottom: 100%;
+      // left: -10px;
+      margin-bottom: 10px;
+      margin-left: 0;
+      font-size: 12px;
+      text-transform: capitalize;
+    }
+    .tooltip::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color:  $W  transparent transparent transparent;
+    }
+
+
+    .icon-icon_pause, .icon-icon_play {
+      position: relative;   
+    }
+    
+    .icon-icon_speaker::before {
+      position: relative;
+      left: 2px;
+    }
+
+    
+    .tooltip_pause , .tooltip_play{
+      visibility: hidden;
+      // left: -2px;
+    }
+    
+    .icon-icon_pause:hover .tooltip_pause , .icon-icon_play:hover .tooltip_play{
+      visibility: visible;
+    }
+ 
+    .icon-icon_refresh ,.icon-icon_mute , .icon-icon_speaker {
+      position: relative;
+    }
+    .tooltip_refresh , .tooltip_disableCaption , .tooltip_mute , .tooltip_unmute{
+      visibility: hidden; 
+    }
+    .icon-icon_refresh:hover .tooltip_refresh {
+      visibility: visible;
+    }
+
+
+    .icon-icon_caption {
+      position: relative;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      border-radius: 50%;
+      &:before{
+        opacity: 0.8;
+      }
+      &.show{
+        background-color: black;
+        &:before{
+
+          opacity: 1;
+        }
+      }
+    }
+
+    .icon-icon_caption:hover .tooltip_disableCaption {
+      visibility: visible;
+    }
+
+    .icon-icon_mute:hover .tooltip_mute {
+      visibility: visible;
+    }
+    .icon-icon_speaker:hover .tooltip_unmute {
+      visibility: visible;
+    }
+
+    // Tooltips end
+    .plyr_time {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      color: white;
+      width: 70px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      width: 37px;
+      height: 34px;
+      color: $W;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      font-size: 42px;
+      margin: auto 5px;
+      transition: all .2s ease-in-out;
+      flex: 0 0 34px;
+     
+      cursor: pointer;
+      &.circle{
+        border-radius: 50%;
+        // border: 2px solid rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0 0 0 3px #fff;
+        &::before{
+          font-size: 20px;
+        }
+        &.icon-icon_pause,&.icon-icon_play{
+            .tooltip{
+              left: 0;
+              right: auto;
+              transform: none;
+              &:after{
+                left: 15px;
+                right: auto;
+              }
+            }
+        }
+        &.icon-icon_mute,&.icon-icon_speaker{
+          .tooltip{
+            right: 0;
+            left: auto;
+            transform: none;
+            &:after{
+              right: 15px;
+              left: auto;
+            }
+          }
+      }
+
+      }
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+    @media screen and (max-width:$bp-lg) {
+      button{
+        font-size: 38px;
+      }
+    }
+
+    input[type="range"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-appearance: none;
+      appearance: none;
+      background: #f0f0f0;
+      cursor: pointer;
+      width: 100%;
+      height: 5px;
+      margin: 0 !important;
+
+      // pointer-events: auto;
+
+    }
+
+    input {
+      color: $saffron;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      /* Override default look */
+      appearance: none;
+      // margin-top: -12px; /* Centers thumb on the track */
+      background-color: $saffron;
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+      position: relative;
+      z-index: 9999;
+    }
+
+    input[type=range]::-webkit-slider-thumb:active {
+      background: $saffron;
+      z-index: 9999;
+      
+    }
+
+    .plyr_progress {  
+      position: relative;
+      width: 100%;
+      margin: 0 5px;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      .progress_bar {
+        position: absolute;
+        background: $saffron;
+        width: 50%;
+        top: 0;
+        left: 0;
+        height: 5px;
+        pointer-events: none;
+        z-index: 10;
+        
+      }
+
+    }
+    &.visible{
+      .plyr_progress , .plyr_time{
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  .video_discription {
+    display: none;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: #f0f0f0;
+    font-family: $CGWM;
+    letter-spacing: 10px;
+    line-height: 2;
+    font-size: 25px;
+    margin-bottom: 122px;
+    b{
+      font: 60px/1.5 $GSST;
+      letter-spacing: 0;
+      font-weight: bold;
+      display: block;
+    }
+  }
+  @supports (-webkit-touch-callout: none) {
+    .video_discription {
+      margin-bottom: 100px;
+    }
+  }
+  @media screen and (max-width:$bp-sm) { 
+    
+  .video_discription {
+    font-family: $CGWM;
+    font-size: 15px;
+    b{
+      font-family: $AR;
+      font-size: 25px;
+    }
+  }
+  #top_video::cue {
+    font-size: 16px;
+  }
+}
+}
+
+
+
+.c_video_caption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: $W;
+  font-size: 25px;
+  bottom: 0;
+  margin-bottom: 60px;
+  text-align: center;
+  p{
+    background-color: $B;
+    margin: 0;
+    padding: 5px;
+    display: inline-block;
+    max-width: 80%;
+    word-break: break-word;
+    @media screen and (min-width:$bp-sm) { 
+      max-width: 40%;
+
+    }
+
+  }
+}

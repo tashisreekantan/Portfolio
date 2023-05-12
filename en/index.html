@@ -1,0 +1,830 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadillac</title>
+
+    <!-- carousel -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <!-- iconstyle -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon/apple-touch-icon.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="sass/css/style.css" type="text/css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__dropdown" id="headerDropdown">
+        <div id="hamIcon" class="menu_icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <!-- <img class="menu_icon" id="hamIcon" src= "assets/images/hamburgericon.png" > -->
+
+        <nav class="header__dropdown__nav">
+          <div class="menu">
+            <ul class="nav-list">
+              <li class="nav-item .icon-icon_speaker">
+                <a href="#video_section" tabindex="0" class="nav-link stat-text-link active"
+                  ><span>Welcome</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#performance"
+                  tabindex="0"
+                  class="nav-link stat-text-link"
+                  ><span>Performance</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#technology"
+                  tabindex="0"
+                  class="nav-link stat-text-link"
+                  ><span>Technology</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#exterior" tabindex="0" class="nav-link stat-text-link"
+                  ><span>Exterior</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#interior" tabindex="0" class="nav-link stat-text-link"
+                  ><span>Interior</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#safety" tabindex="0" class="nav-link stat-text-link"
+                  ><span>Safety</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#specs" tabindex="0" class="nav-link stat-text-link"
+                  ><span>SPECS &amp; TRIMS</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#summary" tabindex="0" class="nav-link stat-text-link"
+                  ><span>Summary</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="header__dropdown__download">
+            <a href="#" class="downloadbutton">Download Vehicle Details</a>
+          </div>
+          <div class="header__dropdown__social">
+            <div class="h2 social__title">
+              <div>Share LYRIQ</div>
+            </div>
+            <ul class="social-nav">
+              <li class="social-item icon-icon_caption"></li>
+              <li class="social-item icon-icon_facebook"></li>
+              <li class="social-item icon-icon_twitter"></li>
+              <li class="social-item icon-icon_email"></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="header__logo">
+        <img
+          src="assets/images/logo-cadillac-white.0c0f4a2.a10544f88ba8b04680c5d78a77c998b4.svg"
+          alt="Logo"
+        />
+      </div>
+      <div class="header_switch_language">
+        <a class="language_switch_link" href="../ar/index.html"> العربية </a>
+      </div>
+    </header>
+
+    <!-- videosectionstart -->
+    <section class="video_section" id="video_section">
+      <div class="video_wrap">
+        <div id='animationLayer' class="slide_animation"></div>
+        <div id="loader" class="loader">
+          <svg
+            width="80"
+            height="80"
+            focusable="false"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 77 62"
+            class="loader-icon"
+            style="color: #fff"
+          >
+            <path
+              fill="currentColor"
+              d="M11.1 59.5h3.1v.9H9.9V52h1.2v7.5zM22 52.4c.5.4.9.8 1.1 1.3v5.1c-.2.5-.6.9-1.1 1.3s-1.2.5-2 .5-1.5-.2-1.9-.5c-.5-.4-.9-.8-1.1-1.3v-5.1c.2-.5.6-.9 1.1-1.3.5-.4 1.1-.5 1.9-.5s1.5.1 2 .5zm-3.1.7c-.3.2-.6.5-.7.8v4.6c.1.3.4.6.7.8.3.2.7.3 1.2.3s.9-.1 1.2-.3c.3-.2.5-.5.7-.8v-4.6c-.1-.3-.4-.6-.7-.8-.3-.2-.7-.3-1.2-.3s-.9.1-1.2.3zM32.6 59.7v.7h-1l-.7-2.4h-3.2l-.7 2.4h-1v-.7l2.5-7.7h1.6l2.5 7.7zm-2-2.6L29.3 53 28 57.1h2.6zM40.8 52.5c.5.3.8.7 1 1.2v5.1c-.2.5-.5.9-1 1.2s-1.1.5-1.8.5h-3.1V52H39c.7 0 1.3.2 1.8.5zm-3.8.4v6.5h1.7c.5 0 .9-.1 1.2-.3s.5-.4.7-.8V54c-.1-.3-.4-.6-.7-.8s-.7-.3-1.2-.3H37zM46.5 60.4h-1.2V52h1.2v8.4zM56.5 60.4H55l-3.6-6.8v6.8h-1.1V52h1.5l3.6 6.8V52h1.1v8.4zM61.9 53.1c-.3.2-.5.5-.7.8v4.6c.1.3.4.6.7.8s.7.3 1.2.3.9-.1 1.2-.3.5-.5.7-.8v-1.6h-1.7V56h2.8v4.4h-1v-.7c-.5.6-1.2.9-2.1.9-.7 0-1.3-.2-1.8-.6-.5-.4-.8-.8-1-1.3v-5.1c.2-.5.6-.9 1.1-1.3.5-.4 1.1-.5 1.9-.5.8 0 1.4.2 1.9.5.5.4.8.8 1.1 1.2v.6h-1c-.1-.4-.4-.8-.7-1-.3-.3-.8-.4-1.3-.4-.6.1-1 .2-1.3.4z"
+            ></path>
+            <path
+              d="M2 10h73.5L70 15.6l-2.5 15.7L38.8 40 11 33.4 8.7 17 2 10z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+            ></path>
+            <path
+              d="M42.9 19.3c7.3.7 14.4 3.4 21.2 8"
+              fill="none"
+              stroke="#676767"
+              stroke-width="5"
+            ></path>
+            <path
+              d="M13.4 26.2c18.2-9.8 35.1-9.4 50.7 1.1"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="5"
+              class="track"
+            ></path>
+            <path
+              d="M39.4.5h-.9l-2 31.4v.4c-.1 1.6 1.2 2.9 2.7 3 .6 0 1.2-.2 1.6-.6l.3-.3c.5-.6.8-1.4.8-2.1L39.4.5z"
+              stroke="currentColor"
+              stroke-width="1.2"
+              class="dial"
+            ></path>
+          </svg>
+        </div>
+
+        <video id="top_video" muted autoplay loop playsinline>
+          <source
+            src="https://brochures-statics.cadillac.com/video/upload/q_auto:best/v1680789161010/prod/brochures/2024-LYRIQ/my24-lyriq-intro-animation-l-3.mp4"
+            type="video/mp4"
+          />
+          <track  kind="captions" src="./assets/subtitle/WEBVTT.txt" srclang="en" label="English" default/>
+        </video>
+
+        <div id="description" class="video_discription" >
+          THE ULTRA-EXCLUSIVE LYRIQ<b> أوائل </b>
+
+        </div>
+
+    
+
+       
+        <div class="plyr_controls visible">
+          <button class="icon-icon_pause circle"  id="plyr_playpause">
+            <span class="tooltip_pause tooltip">Pause </span>
+            <span class="tooltip_play tooltip">Play </span>
+          </button>
+          <button  id="plyr_reload" class="reload icon-icon_refresh">
+              <span class="tooltip_refresh tooltip">reload </span>
+          </button>
+          <div class="plyr_progress">
+              <div class="progress_bar"></div>
+            <!-- <input type="range" id="plyr_progress" value="0"> -->
+            <input class="seekbar" type="range" min="0" max="100"></input>
+            <!-- <input class="progress_bar" type="range" min="0" max="100"></input> -->
+            </div>
+            <!-- <div class="icon-icon_arrowdown">
+
+            </div> -->
+         
+          <div class="plyr_time" id="plyr_time">
+            00:00
+          </div>
+          <button  id="plyr_caption" class="icon-icon_caption show">
+            <!-- <span class="tooltip_enablecaption">Enable caption</span> -->
+            <span class="tooltip_disableCaption tooltip">caption</span>
+          </button>
+          <button  id="plyr_mute" class="icon-icon_mute circle">
+            <span class="tooltip_mute tooltip">Unmute</span>
+            <span class="tooltip_unmute tooltip">Mute</span>
+          </button>
+         
+    
+        </div>
+      </div>
+    </section>
+    <!-- videosectionend -->
+
+   
+
+    <!-- chapter charge start -->
+    <section class="section section_charge">
+      <div class="responsive_image image_wrap">
+        <!-- <img src="assets/lyric_fs.webp" alt=""> -->
+        <picture>
+          <source
+            media="(min-width: 835px)"
+            srcset="assets/images/01.jpg, assets/images/01_m.jpg"
+          />
+          <img
+            src="assets/images/01_m.jpg"
+            alt="Lyric Image"
+            srcset="assets/images/01_m.jpg, assets/images/01_m.jpg"
+          />
+        </picture>
+      </div>
+      <div class="gradient-layer"></div>
+      <div class="detail">
+        <h2 class="title animate">
+          A FIRST FOR CADILLAC.<br />
+          CHARGE INTO A NEW ERA.
+        </h2>
+        <p class="description">
+          Meet the exclusively crafted for the Middle East, all-electric LYRIQ
+          أوائل .This special launch edition is inspired by the region’s
+          relentless spirit to achieve the impossible and light the way for the
+          rest to follow. Sporting one-of-a-kind exterior design, unique
+          interiors and wheel design, only 500 vehicles of the LYRIQ أوائل will
+          ever be made and only available in the Middle East.Fittingly named
+          ‘the first’, this special launch edition marks a historic moment and
+          invites you to be part of it.
+        </p>
+      </div>
+    </section>
+    <!-- chapter charge end -->
+
+    <!-- chapter performance start -->
+    <section id='performance' class="section section_performance">
+      <div class="responsive_image image_wrap">
+        <picture>
+          <source
+            media="(min-width: 835px)"
+            srcset="assets/images/02.jpg, assets/images/02_m.jpg"
+          />
+          <img
+            src="assets/images/02_m.jpg"
+            alt="Lyric Image"
+            srcset="assets/images/02_m.jpg, assets/images/02_m.jpg"
+          />
+        </picture>
+      </div>
+      <div class="gradient-layer"></div>
+      <div class="detail">
+        <p class="description">PERFORMANCE</p>
+        <h2 class="title animate">NEW<br />SOURCE OF<br />POWER</h2>
+      </div>
+    </section>
+    <!-- chapter performance end -->
+
+
+
+    <!-- 4th block carousel section start  -->
+    <section id="specs">
+      <div class="owl-carousel">
+
+      
+
+        <div class="item_1 item-background">
+          <div class="responsive_image">
+            <picture>
+              <source
+                media="(min-width: 835px)"
+                srcset="
+                  assets/images/carousel/001_large.jpg,
+                  assets/images/carousel/001_small.jpg
+                "
+              />
+              <img
+                src="assets/images/carousel/001_small.jpg"
+                alt="Lyric Image"
+                srcset="
+                  assets/images/carousel/001_small.jpg,
+                  assets/images/carousel/001_small.jpg
+                "
+              />
+            </picture>
+          </div>
+          <div class="item-container">
+            <div class="item-content">
+              <div>
+                <span class="logo"><img src="assets/images/icons/icon_A.svg"></span>
+                <h4 class="heading">STANDARD <br> AT HOME <br>CHARGING</h4>
+              </div>
+              <ul>
+                <li class="sub-list">The 220-Volt/1.4 kW dual-level charger
+                  is compatible with standard electrical
+                  outlets for quick top ups or overnight
+                  charging.
+                  </li>
+                <li class="sub-list">The faster 220-Volt/7.7 kW dual-level
+                  charger for up to 28Km of range per.</li>
+                <li class="sub-list">Both charging chords are 7 meters long
+                  and are included with LYRIQ أوائل.</li>
+              </ul>
+            </div>
+            <div class="item-content">
+              <div>
+                <span class="logo"><img src="assets/images/icons/icon_B.svg"></span>
+                <h4 class="heading">RECOMMENDED<br> AT HOME<br> CHARGING</h4>
+              </div>
+              <ul>
+                <li class="sub-list">The available Ultium Powerup Level<sup>2</sup>
+                   Charging requires professional installation in
+                  your compatible garage or an exterior wall<sup>3</sup>.
+                  </li>
+                <li class="sub-list">The 8-meter charging chord offers
+                  220-Volt/22kW أوائل.for up to 88 Km of range<sup>4</sup>
+                  per hour, and the charger comes with Wi-Fi<sup>5</sup>,
+                  Bluetooth<sup>6</sup> and myCadillac Mobile App<sup>7</sup>
+                  connectivity.</li>
+              </ul>
+            </div>
+            <div class="item-content">
+              <div>
+                <span class="logo"><img src="assets/images/icons/icon_C.svg"></span>
+                <h4 class="heading">CHARGING <br> IN <br> PUBLIC</h4>
+              </div>
+              <ul>
+                <li class="sub-list">LEVEL 2 AC CHARGING can add up
+                  to 88 Km of range<sup>9</sup> per hour with 22
+                  kW Public Chargers.</li>
+                <li class="sub-list">DC FAST CHARGING can add up to
+                  125 Km of range<sup>8</sup> in about 10 minutes
+                  at 190 kW acceptance rate(maximum charge speed).</li>
+              </ul>
+            </div>
+            
+          </div>
+
+          <div class="footer">
+            <h4 class="heading">CHARGE INTO A NEW ERA</h4>
+            <p class="description">
+              With a variety of charging options for both at-home and public
+              charging, keeping your LYRIQ charged has never been easier.
+            </p>
+          </div>
+          <!-- <div class="gradient-layer"></div> -->
+        </div>
+
+        <div class="item_2 item-background">
+          <div class="responsive_image image_wrap">
+            <picture>
+              <source
+                media="(min-width: 835px)"
+                srcset="
+                  assets/images/carousel/002_large.jpg,
+                  assets/images/carousel/002_small.png
+                "
+              />
+              <img
+                src="assets/images/carousel/002_small.png"
+                alt="Lyric Image"
+                srcset="
+                  assets/images/carousel/002_small.png,
+                  assets/images/carousel/002_small.png
+                "
+              />
+            </picture>
+          </div>
+          <div class="gradient-layer"></div>
+          <div class="footer">
+            <h4 class="heading">A FORCE TO BEHOLD</h4>
+            <p class="description">
+              With available All-Wheel Drive, LYRIQ has dual motors to power all
+              four wheels—so you can enjoy the full force of 500 horsepower and
+              610Nm of torque. And with added power, you get the added
+              capability of trailering .
+            </p>
+          </div>
+        </div>
+
+        <div class="item_3 item-background">
+          <div class="responsive_image image_wrap">
+            <picture>
+              <source
+                media="(min-width: 835px)"
+                srcset="
+                  assets/images/carousel/003_large.jpg,
+                  assets/images/carousel/003_small.png
+                "
+              />
+              <img
+                src="assets/images/carousel/003_small.png"
+                alt="Lyric Image"
+                srcset="
+                  assets/images/carousel/003_small.png,
+                  assets/images/carousel/003_small.png
+                "
+              />
+            </picture>
+          </div>
+          <div class="gradient-layer"></div>
+          <div class="footer">
+            <h4 class="heading">THE BALANCE OF POWER</h4>
+            <p class="description">
+              With the EV Ultium Battery Platform, LYRIQ delivers an
+              invigorating and agile drive that makes every mile a milestone. As
+              a structural element of the vehicle, the Ultium architecture
+              enables a near 50/50 front-to-rear weight distribution and
+              provides a low center of gravity, which results in a vehicle
+              that’s sporty, responsive and built for spirited driving.
+              Simulated battery shown.
+            </p>
+          </div>
+        </div>
+
+        <div class="item_4 item-background">
+          <div class="responsive_image image_wrap">
+            <picture>
+              <source
+                media="(min-width: 835px)"
+                srcset="
+                  assets/images/carousel/004_large.jpg,
+                  assets/images/carousel/004_small.png
+                "
+              />
+              <img
+                src="assets/images/carousel/004_small.png"
+                alt="Lyric Image"
+                srcset="
+                  assets/images/carousel/004_small.png,
+                  assets/images/carousel/004_small.png
+                "
+              />
+            </picture>
+          </div>
+          <div class="gradient-layer"></div>
+          <div class="footer">
+            <h4 class="heading">
+              8-YEAR/160,000KM ELECTRIC VEHICLE PROPULSION BATTERY LIMITED
+              WARRANTY
+            </h4>
+            <p class="description">
+              In addition to Bumper-to-Bumper Coverage for 4 years or 100,000 Km
+              , the battery limited warranty covers defects related to materials
+              or workmanship to the propulsion battery pack and its internal
+              components for 8 years or 160,000 Km.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- 4th block carousel section end  -->
+
+
+    <!-- 6th block carousel section start  -->
+    <section>
+      <div class="owl-carousel">
+        <div class="video_section" id="video_section">
+          <div class="video_wrap">
+            <div id="loader" class="loader">
+              <svg width="80" height="80" focusable="false" aria-hidden="true"xmlns="http://www.w3.org/2000/svg"viewBox="0 0 77 62"class="loader-icon" style="color: #fff">
+                <path fill="currentColor" d="M11.1 59.5h3.1v.9H9.9V52h1.2v7.5zM22 52.4c.5.4.9.8 1.1 1.3v5.1c-.2.5-.6.9-1.1 1.3s-1.2.5-2 .5-1.5-.2-1.9-.5c-.5-.4-.9-.8-1.1-1.3v-5.1c.2-.5.6-.9 1.1-1.3.5-.4 1.1-.5 1.9-.5s1.5.1 2 .5zm-3.1.7c-.3.2-.6.5-.7.8v4.6c.1.3.4.6.7.8.3.2.7.3 1.2.3s.9-.1 1.2-.3c.3-.2.5-.5.7-.8v-4.6c-.1-.3-.4-.6-.7-.8-.3-.2-.7-.3-1.2-.3s-.9.1-1.2.3zM32.6 59.7v.7h-1l-.7-2.4h-3.2l-.7 2.4h-1v-.7l2.5-7.7h1.6l2.5 7.7zm-2-2.6L29.3 53 28 57.1h2.6zM40.8 52.5c.5.3.8.7 1 1.2v5.1c-.2.5-.5.9-1 1.2s-1.1.5-1.8.5h-3.1V52H39c.7 0 1.3.2 1.8.5zm-3.8.4v6.5h1.7c.5 0 .9-.1 1.2-.3s.5-.4.7-.8V54c-.1-.3-.4-.6-.7-.8s-.7-.3-1.2-.3H37zM46.5 60.4h-1.2V52h1.2v8.4zM56.5 60.4H55l-3.6-6.8v6.8h-1.1V52h1.5l3.6 6.8V52h1.1v8.4zM61.9 53.1c-.3.2-.5.5-.7.8v4.6c.1.3.4.6.7.8s.7.3 1.2.3.9-.1 1.2-.3.5-.5.7-.8v-1.6h-1.7V56h2.8v4.4h-1v-.7c-.5.6-1.2.9-2.1.9-.7 0-1.3-.2-1.8-.6-.5-.4-.8-.8-1-1.3v-5.1c.2-.5.6-.9 1.1-1.3.5-.4 1.1-.5 1.9-.5.8 0 1.4.2 1.9.5.5.4.8.8 1.1 1.2v.6h-1c-.1-.4-.4-.8-.7-1-.3-.3-.8-.4-1.3-.4-.6.1-1 .2-1.3.4z"></path>
+                <path d="M2 10h73.5L70 15.6l-2.5 15.7L38.8 40 11 33.4 8.7 17 2 10z" fill="none" stroke="currentColor" stroke-width="1.2"></path>
+                <path d="M42.9 19.3c7.3.7 14.4 3.4 21.2 8" fill="none" stroke="#676767" stroke-width="5"></path>
+                <path d="M13.4 26.2c18.2-9.8 35.1-9.4 50.7 1.1" fill="none" stroke="currentColor" stroke-width="5" class="track"></path>
+                <path d="M39.4.5h-.9l-2 31.4v.4c-.1 1.6 1.2 2.9 2.7 3 .6 0 1.2-.2 1.6-.6l.3-.3c.5-.6.8-1.4.8-2.1L39.4.5z" stroke="currentColor" stroke-width="1.2" class="dial"></path>
+              </svg>
+            </div>
+    
+            <video id="top_video" muted autoplay loop playsinline>
+              <source
+                src="https://brochures-statics.cadillac.com/video/upload/q_auto:best/v1680789161010/prod/brochures/2024-LYRIQ/my24-lyriq-intro-animation-l-3.mp4"
+                type="video/mp4"
+              />
+              <track  kind="captions" src="./assets/subtitle/carouselvtt.txt" srclang="en" label="English" default/>
+            </video>
+              
+            <div class="plyr_controls visible">
+              <button class="icon-icon_pause circle"  id="plyr_playpause">
+                <span class="tooltip_pause tooltip">Pause </span>
+                <span class="tooltip_play tooltip">Play </span>
+              </button>
+              <button  id="plyr_reload" class="reload icon-icon_refresh">
+                  <span class="tooltip_refresh tooltip">reload </span>
+              </button>
+              <div class="plyr_progress">
+                  <div class="progress_bar"></div>
+                  <input class="seekbar" type="range" min="0" max="100"></input>
+              </div>       
+              <div class="plyr_time" id="plyr_time">
+                00:00
+              </div>
+              <button  id="plyr_caption" class="icon-icon_caption show">
+                <span class="tooltip_disableCaption tooltip">caption</span>
+              </button>
+              <button  id="plyr_mute" class="icon-icon_mute circle">
+                <span class="tooltip_mute tooltip">Unmute</span>
+                <span class="tooltip_unmute tooltip">Mute</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_1 item-background">
+          <div class="responsive_image image_wrap">
+            <picture>
+              <source
+                media="(min-width: 835px)"
+                srcset="assets/images/08.jpg, assets/images/08_m.jpg"
+              />
+              <img
+                src="assets/images/08.jpg, assets/images/08_m.jpg"
+                alt="Lyric Image"
+                srcset="assets/images/08.jpg, assets/images/08_m.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gradient-layer"></div>
+          <div class="footer">
+            <h4 class="heading">
+              FULL-GLASS CEILING AND PANORAMIC BLACK SUNROOF
+            </h4>
+            <p class="description">
+              Look above you—and beyond. From rail to rail, the standard sloping
+              fixed full-glass roof stretches uninterrupted except for the
+              beautiful black painted roof and sunroof. Along with a striking
+              exterior, an interior power sunshade allows you to widen or
+              minimize the view as you move through the landscape.
+            </p>
+          </div>
+        </div>
+
+        <div class="item_2 item-background">
+          <div class="responsive_image image_wrap">
+            <picture>
+              <source
+                media="(min-width: 835px)"
+                srcset="assets/images/09.jpg, assets/images/09_m.jpg"
+              />
+              <img
+                src="assets/images/09_m.jpg"
+                alt="Lyric Image"
+                srcset="assets/images/09_m.jpg, assets/images/09_m.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gradient-layer"></div>
+          <div class="footer">
+            <h4 class="heading">BRILLIANCE IN THE SPOTLIGHT</h4>
+            <p class="description">
+              The first and only LYRIQ أوائل arrives in shining Nebula Metallic
+              armor. Brilliantly finished to accentuate the distinctive and bold
+              curves, it leaves a streak of elegance everywhere it goes.
+            </p>
+          </div>
+        </div>
+
+        <div class="item_3 item-background">
+          <div class="responsive_image image_wrap">
+            <picture>
+              <source
+                media="(min-width: 835px)"
+                srcset="assets/images/10.jpg, assets/images/10_m.jpg"
+              />
+              <img
+                src="assets/images/10_m.jpg"
+                alt="Lyric Image"
+                srcset="assets/images/10_m.jpg, assets/images/10_m.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gradient-layer"></div>
+          <div class="footer">
+            <h4 class="heading">UNIQUE SPORT GRILLE</h4>
+            <p class="description">
+              The exclusive Sport grille comes with a new LED mesh design. The
+              perfectly choreographed sequence lights up to meet you and sets
+              the tone for the journey ahead.
+            </p>
+          </div>
+        </div>
+
+        <div class="item_4 item-background">
+          <div class="responsive_image image_wrap">
+            <picture>
+              <source
+                media="(min-width: 835px)"
+                srcset="assets/images/011.png, assets/images/011_m.png"
+              />
+              <img
+                src="assets/images/011_m.png"
+                alt="Lyric Image"
+                srcset="assets/images/011_m.png, assets/images/011_m.png"
+              />
+            </picture>
+          </div>
+          <div class="gradient-layer"></div>
+          <div class="footer">
+            <h4 class="heading">HEAD-TURNING WHEELS</h4>
+            <p class="description">
+              The special edition LYRIQ أوائل rides on equally unique 22-inch
+              split-spoke reverse-rim alloy wheels with After Midnight finish,
+              that are fitting for an iconic arrival.
+            </p>
+          </div>
+        </div>
+
+        <div class="item_5 item-background">
+          <div class="responsive_image image_wrap">
+            <picture>
+              <source
+                media="(min-width: 835px)"
+                srcset="assets/images/012.jpg, assets/images/012_m.jpg"
+              />
+              <img
+                src="assets/images/012_m.jpg"
+                alt="Lyric Image"
+                srcset="assets/images/012_m.jpg, assets/images/012_m.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gradient-layer"></div>
+          <div class="footer">
+            <h4 class="heading">LED TAIL LAMPS</h4>
+            <p class="description">
+              LYRIQ أوائل shines with available LED technology that elevates
+              basic function into artful design. Vertical taillamps intensify
+              the drama of the vehicle’s rear profile.
+            </p>
+          </div>
+        </div>
+        <div class="item_6 item-background">
+          <div class="responsive_image image_wrap">
+            <picture>
+              <source
+                media="(min-width: 835px)"
+                srcset="assets/images/013.jpg, assets/images/013_m.jpg"
+              />
+              <img
+                src="assets/images/013_m.jpg"
+                alt="Lyric Image"
+                srcset="assets/images/013_m.jpg, assets/images/013_m.jpg"
+              />
+            </picture>
+          </div>
+          <div class="gradient-layer"></div>
+          <div class="footer">
+            <h4 class="heading">AUTOMATED CHARGE PORT</h4>
+            <p class="description">
+              Charging LYRIQ أوائل is simple. A gentle press of the Cadillac
+              Crest on the port door reveals the charge port. Form and function
+              in perfect harmony.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 6th block carousel section end  -->
+
+    <!-- system features start -->
+    <section  class="block-features">
+      <div class="standard-features">
+          <div class="container">
+              <div class="features-intro">
+                  <h2 class="intro"> GO CONFIDENTLY <br> WITH THE CADILLAC <br> SMART SYSTEM</h2>
+                  <p class="description">In a world of unpredictability, the Cadillac Smart 
+                      System™ offers proactive peace of mind. 
+                      This comprehensive suite of standard driver-assistance 
+                      features helps inspire confidence on your journey—whether 
+                      you’re backing out of your driveway or boldly taking on the 
+                      road ahead.
+                  </p>
+              </div>
+              <div class="row features-list-wrapper">
+                  <h4 class="title">CADILLAC SMART SYSTEM STANDARD FEATURES</h4>
+                  <div class="features-list-row">
+                      <ul class="features-list row-3">
+                          <li><h6>AUTOMATIC EMERGENCY BRAKING</h6></li>
+                          <li><h6>FORWARD COLLISION ALERT</h6></li>
+                          <li><h6>FRONT PEDESTRIAN BRAKING</h6></li>
+                      </ul>
+                      <ul class="features-list row-3">
+                          <li><h6>HD REAR VISION CAMERA</h6></li>
+                          <li><h6>REAR PARK ASSIST</h6></li>
+                          <li><h6>REAR SEAT <u>REMINDER</u><sup>†</sup> </h6></li>
+                      </ul>
+                      <ul class="features-list row-3">
+                          <li><h6>SAFETY ALERT SEAT</h6></li>
+                          <li><h6>TEEN DRIVER</h6></li>
+                          <li><h6>VEHICLE <u>DIAGNOSTICS</u><sup>†</sup> </h6></li>
+                      </ul>
+                  </div>
+  
+                  <hr class="list-separator" >
+  
+                  <h2 class="title sub_heading">STANDARD FEATURES</h2>
+                  <div class="features-list-row">
+                      <ul class="features-list row-2">
+                          <li><h6>BLIND ZONE STEERING ASSIST</h6></li>
+                          <li><h6>FOLLOWING DISTANCE INDICATOR</h6></li>
+                          <li><h6>FRONT BICYCLIST BRAKING</h6></li>
+                          <li><h6>LANE KEEP ASSIST WITH LANE DEPARTURE WARNING</h6></li>
+                          <li><h6>REAR CROSS TRAFFIC BRAKING</h6></li>
+                          <li><h6>REVERSE AUTOMATIC BRAKING</h6></li>
+                          <li><h6>FRONT PARK ASSIST</h6></li>
+                          <li><h6>SECOND-ROW SEAT BELT INDICATOR</h6></li>
+                          <li><h6>INTELLIBEAM, AUTO HIGH-BEAM ASSIST</h6></li>
+                      </ul>
+                      <ul class="features-list row-2">
+                          <li><h6>ADAPTIVE CRUISE CONTROL</h6></li>
+                          <li><h6>ENHANCED AUTOMATIC PARKING ASSIST</h6></li>
+                          <li><h6>INTERSECTION AUTOMATIC EMERGENCY BRAKING</h6></li>
+                          <li><h6>HD SURROUND VISION</h6></li>
+                          <li><h6>FRONT PEDESTRIAN BRAKING</h6></li>
+                          <li><h6>REAR CAMERA MIRROR WITH WASHER</h6></li>
+                          <li><h6>REAR PEDESTRIAN ALERT</h6></li>
+                          <li><h6>SIDE BICYCLIST ALERT</h6></li>
+                          <li><h6>ADAPTIVE HEADLAMP SYSTEM</h6></li>
+                      </ul>
+                  </div>
+  
+                  <hr class="list-separator" >
+  
+                  <p class="footer">Safety or driver-assistance features are no substitute for the driver’s 
+                      responsibility to operate the vehicle in a safe manner. Read the vehicle Owner’s 
+                      Manual for important feature limitations and information.
+                  </p>
+  
+              </div>
+          </div>   
+      </div> 
+  
+    </section>
+    <!-- system features end -->
+
+    <!-- chapter driveway start -->
+    <section id="summary" class="section section_performance section_driveway">
+      <div class="responsive_image image_wrap">
+        <picture>
+          <source
+            media="(min-width: 835px)"
+            srcset="assets/images/07.jpg, assets/images/07_m.jpg"
+          />
+          <img
+            src="assets/images/07_m.jpg"
+            alt="Lyric Image"
+            srcset="assets/images/07_m.jpg, assets/images/07_m.jpg"
+          />
+        </picture>
+      </div>
+      <div class="detail">
+        <h2 class="title animate">
+          THE ONLY WAY<br />IT COULD LOOK BETTER<br />IS IN YOUR DRIVEWAY
+        </h2>
+      </div>
+    </section>
+    <!-- chapter driveway end -->
+
+    <!-- footerstart -->
+    <footer>
+      <div class= "footer" style="background-color: #000000; ">
+        <span class="logo"
+        ><img src="assets/images/icons/cadillac-heritage-script-logo.svg"
+      /></span>
+        <ul class="company_doc">
+          <li><a href="https://www.gm.com/copyright-trademark?evar25=ca_2024_LYRIQ_digital-brochure_footer">Copyright & Trademark info</a></li>
+          <li><a href="http://www.gm.com/privacy-statement.html?evar25=ca_2024_LYRIQ_digital-brochure_footer">Privacy Statement</a></li>
+          <li><a href="https://www.cadillac.com/user-guidelines?evar25=ca_2024_LYRIQ_digital-brochure_footer">User Guidelines</a></li>
+          <li><a href="https://www.cadillac.com/gm-security?evar25=ca_2024_LYRIQ_digital-brochure_footer">GM Security</a></li>
+          <li><a href="https://www.cadillac.com/global-footer/adchoices.html?evar25=ca_2024_LYRIQ_digital-brochure_footer">AdChoices</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- footerend -->
+
+    
+    
+     <!-- script for video -->
+    <script src="js/video.js"></script>
+     <!-- script for video -->
+
+    <!-- script for carousel -->
+    <script src="js/carousel.js"></script>
+    <script src="js/script.js"></script>
+    <!-- script for carousel -->
+
+  </body>
+</html>
